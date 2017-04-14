@@ -18,7 +18,7 @@ namespace CECS_475_Lab1 {
 
       public TicTacToe() {
          //declare board
-         board = new int[3, 3];
+         board = new int[BOARDSIZE, BOARDSIZE];
          //initialize board to all 0's
          for (int i = 0; i < BOARDSIZE; i++) {
             for (int j = 0; j < BOARDSIZE; j++) {
