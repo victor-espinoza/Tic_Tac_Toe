@@ -1,0 +1,154 @@
+# Lab_1_Tic_Tac_Toe
+Project Overview:    
+Tic Tac Toe game using C#.    
+    
+This project is very simple. The first step is to create the Tic-Tac-Toe gameboard. For this implementation I decided to use a 2-dimensional array of integers (3x3). Each element in the array represents a space on the Tic-Tac-Toe gameboard. I then displayed the gameboard to show that all of the spaces on it were available to choose. After that I prompted the player to input a valid move. Once a valid move was given, I then updated the 2-dimensional array with the appropriate value depending on whether the player was X (1) or O (-1).     
+     
+After doing this I then checked to see if the move resulted in a victory for either player. If this was the case, then the winner was immediately displayed. If not, I then switched the turn to the other player and repeated the same process for their move. This continues until either a person wins the game or all of the spaces on the gameboard are taken (which results in a tie). Once the game finishes, the results are shown on the console window and the program is terminated. That is how this projec works.   
+    
+Dependencies:      
+This project was created using Microsoft Visual Studio Community 2013 for Windows Desktop Version: 12.0.40629.00 Update 5.
+    
+     
+Sample Output:      
+ -----------------------
+|       |       |       |
+|       |       |       |
+|       |       |       |
+ -----------------------
+|       |       |       |
+|       |       |       |
+|       |       |       |
+ -----------------------
+|       |       |       |
+|       |       |       |
+|       |       |       |
+ -----------------------
+Player 1's turn.
+Player 1: Enter row (0 <= row < 3): 1
+Player 1: Enter column (0 <= column < 3): 1
+
+ -----------------------
+|       |       |       |
+|       |       |       |
+|       |       |       |
+ -----------------------
+|       |       |       |
+|       |   X   |       |
+|       |       |       |
+ -----------------------
+|       |       |       |
+|       |       |       |
+|       |       |       |
+ -----------------------
+Player 2's turn.
+Player 2: Enter row (0 <= row < 3): fasd
+Not a valid row number. Please enter an integer value between 0 and 2...
+Player 2: Enter row (0 <= row < 3): -4
+Desired row value not within appropriate range. Please enter an integer value be
+tween 0 and 2...
+Player 2: Enter row (0 <= row < 3): 1
+Player 2: Enter column (0 <= column < 3): 2
+
+ -----------------------
+|       |       |       |
+|       |       |       |
+|       |       |       |
+ -----------------------
+|       |       |       |
+|       |   X   |   O   |
+|       |       |       |
+ -----------------------
+|       |       |       |
+|       |       |       |
+|       |       |       |
+ -----------------------
+Player 1's turn.
+Player 1: Enter row (0 <= row < 3): 0
+Player 1: Enter column (0 <= column < 3): 1
+
+ -----------------------
+|       |       |       |
+|       |   X   |       |
+|       |       |       |
+ -----------------------
+|       |       |       |
+|       |   X   |   O   |
+|       |       |       |
+ -----------------------
+|       |       |       |
+|       |       |       |
+|       |       |       |
+ -----------------------
+Player 2's turn.
+Player 2: Enter row (0 <= row < 3): 2
+Player 2: Enter column (0 <= column < 3): 1
+
+ -----------------------
+|       |       |       |
+|       |   X   |       |
+|       |       |       |
+ -----------------------
+|       |       |       |
+|       |   X   |   O   |
+|       |       |       |
+ -----------------------
+|       |       |       |
+|       |   O   |       |
+|       |       |       |
+ -----------------------
+Player 1's turn.
+Player 1: Enter row (0 <= row < 3): 0
+Player 1: Enter column (0 <= column < 3): 2
+
+ -----------------------
+|       |       |       |
+|       |   X   |   X   |
+|       |       |       |
+ -----------------------
+|       |       |       |
+|       |   X   |   O   |
+|       |       |       |
+ -----------------------
+|       |       |       |
+|       |   O   |       |
+|       |       |       |
+ -----------------------
+Player 2's turn.
+Player 2: Enter row (0 <= row < 3): 2
+Player 2: Enter column (0 <= column < 3): 0
+
+ -----------------------
+|       |       |       |
+|       |   X   |   X   |
+|       |       |       |
+ -----------------------
+|       |       |       |
+|       |   X   |   O   |
+|       |       |       |
+ -----------------------
+|       |       |       |
+|   O   |   O   |       |
+|       |       |       |
+ -----------------------
+Player 1's turn.
+Player 1: Enter row (0 <= row < 3): 0
+Player 1: Enter column (0 <= column < 3): 0
+
+ -----------------------
+|       |       |       |
+|   X   |   X   |   X   |
+|       |       |       |
+ -----------------------
+|       |       |       |
+|       |   X   |   O   |
+|       |       |       |
+ -----------------------
+|       |       |       |
+|   O   |   O   |       |
+|       |       |       |
+ -----------------------
+
+Player 1 Wins!
+
+Press any key to continue...
