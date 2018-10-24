@@ -1,4 +1,4 @@
-Project Overview: 
+Project Overview:
 Tic Tac Toe game using C#.    
     
 This project is very simple. The first step is to create the Tic-Tac-Toe gameboard. For this implementation I decided to use a 2-dimensional array of integers (3x3). Each element in the array represents a space on the Tic-Tac-Toe gameboard. I then displayed the gameboard to show that all of the spaces on it were available to choose. After that I prompted the player to input a valid move. Once a valid move was given, I then updated the 2-dimensional array with the appropriate value depending on whether the player was X (1) or O (-1).     
